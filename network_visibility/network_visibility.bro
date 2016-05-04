@@ -1,3 +1,7 @@
+# tracks network visibility and logs
+# Josh Guild: joshuaguild@gmail.com
+# lemme know if you use it and how it goes :)
+
 module Visibility;
 
 # add subnet CIDRs you'd like to check for here
