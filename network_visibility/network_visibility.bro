@@ -1,7 +1,14 @@
 module Visibility;
 
 # add subnet CIDRs you'd like to check for here
-global net_conn_nets = set(192.168.0.0/16,10.0.0.0/8,172.16.0.0/12);
+global net_conn_nets: set[subnet] = {
+	10.0.0.0/8,
+        192.168.0.0/16,
+        172.16.0.0/12,
+        127.0.0.0/8,
+        [fe80::]/10,
+        [::1]/128,
+};
 
 export {
         # Log ID
