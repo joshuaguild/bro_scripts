@@ -20,12 +20,12 @@ global layout_wl: set[count] = {
 event rdp_client_core_data(c: connection, data: RDP::ClientCoreData)
 {
    
-   local kl = data$keyboard_layout;
+	local kl = data$keyboard_layout;
    
-    if (kl !in layout_wl)
-        {
-        NOTICE([$note=Weird::Activity,
-        		$conn=c,
-                $msg=fmt("Non-English keyboard layout seen in rdp.log - language set to %s.", kl)]);
-        }
+	if (kl !in layout_wl)
+		{
+		NOTICE([$note=Weird::Activity,
+			$conn=c,
+			$msg=fmt("Non-English keyboard layout seen in rdp.log - language set to %s.", kl)]);
+		}
 }
