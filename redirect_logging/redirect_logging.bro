@@ -1,4 +1,4 @@
-# Logs rerdirct messages in HTTP traffic
+# Logs rerdirect messages in HTTP traffic
 # Josh Guild: joshuaguild@gmail.com
 #
 # TODO: This is a little hacky, I'd like to just add a column to the http.log
